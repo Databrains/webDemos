@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!--============================================================================
+  Set up favicons
+==============================================================================-->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<base target="myframe">
+<!--==========================================================================
+  Set Up CSS
+============================================================================-->
+  <link rel="stylesheet" href="css/tableauviz.css">
+    <title>Student Management Analytics Reporting Tool</title>
+    <script type="text/javascript" src="https://dbi-app01.databrains.com/t/SMART/views/SMARTLandingPage/LandingPage?:embed=y&:linktarget=_self"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+  <body>
+      <!--Viz Container -->
+      <div id ="vizContainer" align="center">
+        <!--Header-->
+          <div id="header" class="header_banner">
+                <!--Smart Logo -->
+                <a href="https://dbi-app01.databrains.com/t/SMART/views/SMARTLandingPage/LandingPage?:embed=y&:linktarget=_self" >
+                    <image id="smartLogo" src="img/smartlogo.png" alt="Home" class="logo_img">
+                </a>
+                <!-- Back Button -->
+                <image id=backButton src="img/backarrow 250.png" alt="Back" class="back_button" onClick="goBack()">
+          </div>
+          <!--End Header -->
+        <!--Viz Background (Gray) -->
+        <div id = "vizbackground" class="viz_background">
+            <!--Tableau Visualiztaion -->
+            <iframe
+              class="viz_sizes"
+              id="tableauviz"
+              target="_parent"
+              frameBorder = "0"
+              name ="myframe">
+                  <a
+                    target="myframe"
+                    src="https://dbi-app01.databrains.com/t/SMART/views/SMARTLandingPage/LandingPage?:embed=y&:linktarget=_self"
+                    >
+                  </a>
+            </iframe>
+
+        </div>
+        <!--End Viz Background-->
+
+      </div>
+      <!--End Viz Container -->
+
+
+
+<!--===========================================================================
+      javascript files
+ ===========================================================================-->
+<script src="js/tableauviz.js"></script>
+<script src="js/containercontrols.js"></script>
+</body>
+
+</html>
